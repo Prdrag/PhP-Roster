@@ -1,0 +1,308 @@
+#stream{
+  padding: 5px;
+  min-height: 500px;
+  text-align: center;
+}
+
+.level{
+  float: left;
+  width: 10%;
+  font-weight: bold;
+}
+
+.char{
+  float: left;
+  width: 80%;
+}
+
+.spec{
+  width: 50%;
+  float: left;
+}
+
+.specimg{
+  float: left;
+  height: 21px;
+  width: 20px;
+  border: 1px solid #7E7E7E;
+  margin-right: 5px;
+}
+
+.name{
+  float: left;
+  width: 65%;
+}
+
+.charimg{
+  height: 35px;
+  width: 35px;
+}
+
+.buttonon{
+  background-color: #FF000A;
+  color: #ffffff;
+  background-image: -webkit-linear-gradient(top, #FF000A, #f78b3a);
+  background-image: linear-gradient(to bottom, #FF000A, #f78b3a);
+  border-color: rgba(0, 0, 0, 0.1);
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  }
+
+.buttonoff{
+  background-color: #00FF29;
+  color: #ffffff;
+  background-image: -webkit-linear-gradient(top, #00FF29, #f78b3a);
+  background-image: linear-gradient(to bottom, #FF000A, #E56D6D);
+  border-color: rgba(0, 0, 0, 0.1);
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.streamb{
+  text-align: center;
+  padding: 15px;
+}
+.achivement{
+  font-size: 20px;
+  font-family: "Arial Black", Arial, sans-serif;
+  font-weight: 900;
+  color: white;
+  padding-left: 11px;
+  background: url("http://eu.battle.net/wow/static/images/icons/achievements.gif") left 7px no-repeat;
+  line-height: 23px;
+}
+
+.krieger{
+	color: #C79C6E;
+}
+.Paladin{
+	color: #F58CBA;
+}
+.Jaeger{
+	color: #ABD473;
+}
+.Schurke{
+	color: #FFF569;
+}
+.Priester{
+	color: #BBBBBB;
+}
+.Todesritter{
+	color: #c41e3b;
+}
+.Schamane{
+	color: #0070DE;
+}
+.Magier{
+	color: #69CCF0;
+}
+.Hexenmeister{
+	color: #9482C9;
+}
+.Moench{
+	color: #558A84;
+}
+.Druide{
+	color: #FF7D0A;	
+}
+
+.rank{
+	color: #ffffff;
+  float: right;
+}
+.points{
+	color: #ffffff;
+  float: right;
+}
+
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+img {
+  width: auto\9;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  background-color: #ffffff;
+  background: #18181a url(http://hnd-guild.de/templates/yoo_catalyst/images/background/brushed/page.jpg) 50% 0 repeat;
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #005580;
+  text-decoration: underline;
+}
+
+.img-polaroid {
+  padding: 1px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+     -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  height: 35px;
+  width: 35px;
+  float: right;
+}
+
+.row {
+  margin-left: -20px;
+  *zoom: 1;
+}
+
+.row:before,
+.row:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.row:after {
+  clear: both;
+}
+
+[class*="span"] {
+  float: left;
+  min-height: 1px;
+}
+
+.span3 {
+  width: 220px;
+}
+
+.span2 {
+  width: 140px;
+}
+
+.row-fluid {
+  margin: 30px;
+  padding: 15px;
+  width: 100%;
+  *zoom: 1;
+  border-radius: 10px;
+  background: url(http://hnd-guild.de/templates/yoo_catalyst/images/system_tl.png) 0 0 no-repeat, url(http://hnd-guild.de/templates/yoo_catalyst/images/system_tr.png) 100% 0 no-repeat, url(http://hnd-guild.de/templates/yoo_catalyst/images/system_bl.png) 0 100% no-repeat, url(http://hnd-guild.de/templates/yoo_catalyst/images/system_br.png) 100% 100% no-repeat, url(http://hnd-guild.de/templates/yoo_catalyst/images/system.png) 0 0 repeat;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.06), 0 0 0 1px rgba(0,0,0,0.9), inset 0 0 5px rgba(0,0,0,0.4), 0 3px 5px rgba(0,0,0,0.5), 0 2px 0 1px rgba(0,0,0,0.5);
+}
+
+.row-fluid:before,
+.row-fluid:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.row-fluid:after {
+  clear: both;
+}
+
+.row-fluid [class*="span"] {
+  display: block;
+  float: left;
+  width: 100%;
+  min-height: 280px;
+  padding-left: 5px;
+  /*margin-left: 2.127659574468085%;*/
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.row-fluid [class*="span"]:first-child {
+  margin-left: 0;
+}
+
+.row-fluid .controls-row [class*="span"] + [class*="span"] {
+  margin-left: 2.127659574468085%;
+}
+
+.row-fluid .span3 {
+  width: 33%;
+  *width: 23.351063829787233%;
+}
+
+.row-fluid .span2 {
+  width: 14.893617021276595%;
+  *width: 14.840425531914894%;
+}
+
+
+.page-header {
+  padding-bottom: 9px;
+  margin: 20px 0 30px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+table {
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  line-height: 20px;
+  text-align: left;
+  vertical-align: top;
+  width: 11px;
+/*  border-top: 1px solid #dddddd;*/
+}
+
+.table th {
+  font-weight: bold;
+  border-bottom: 1px solid; 
+}
+
+.table thead th {
+  vertical-align: bottom;
+}
+
+.table caption + thead tr:first-child th,
+.table caption + thead tr:first-child td,
+.table colgroup + thead tr:first-child th,
+.table colgroup + thead tr:first-child td,
+.table thead:first-child tr:first-child th,
+.table thead:first-child tr:first-child td {
+  border-top: 0;
+}
+
+.table tbody + tbody {
+  border-top: 2px solid #dddddd;
+}
+
+.table .table {
+  background-color: #ffffff;
+}
