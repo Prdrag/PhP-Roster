@@ -4,15 +4,35 @@
   text-align: center;
 }
 
+.topimg{
+  width:25px;
+  height: 25px;
+  margin-right: 15px;
+  border: 1px solid #737373;
+}
+
+.td-header{
+  font-weight: normal;
+  font-size: 12px;
+  border-bottom: none;
+  border-bottom: 1px solid;
+}
+
 .level{
   float: left;
   width: 10%;
-  font-weight: bold;
+  color: #ffffff;
 }
 
 .char{
   float: left;
-  width: 80%;
+  width: 90%;
+}
+
+.race{
+  float: left;
+  width: 10%;
+  color: #ffffff;
 }
 
 .spec{
@@ -22,15 +42,46 @@
 
 .specimg{
   float: left;
-  height: 21px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
   border: 1px solid #7E7E7E;
+  margin-right: 25px;
+}
+
+.prof{
+  float: left;
+  color: #FFFFFF;
   margin-right: 5px;
+  border: 1px solid #737373;
+}
+.prof3{
+  float: left;
+  width: 8%;
+  color: #FFFFFF;
+}
+.prof2{
+  float: left;
+  margin-right: 3px;
+  color: #ffffff;
+  width: 8%;
+}
+
+.specimg2{
+  float: left;
+  height: 25px;
+  width: 25px;
+  margin-right: 25px;
 }
 
 .name{
   float: left;
-  width: 65%;
+  width: 20%;
+}
+
+.name2{
+  float: left;
+  width: 20%;
+  color: #FFFFFF;
 }
 
 .charimg{
@@ -77,46 +128,46 @@
 }
 
 .krieger{
-	color: #C79C6E;
+  color: #C79C6E;
 }
 .Paladin{
-	color: #F58CBA;
+  color: #F58CBA;
 }
 .Jaeger{
-	color: #ABD473;
+  color: #ABD473;
 }
 .Schurke{
-	color: #FFF569;
+  color: #FFF569;
 }
 .Priester{
-	color: #BBBBBB;
+  color: #FFFFFF;
 }
 .Todesritter{
-	color: #c41e3b;
+  color: #c41e3b;
 }
 .Schamane{
-	color: #0070DE;
+  color: #0070DE;
 }
 .Magier{
-	color: #69CCF0;
+  color: #69CCF0;
 }
 .Hexenmeister{
-	color: #9482C9;
+  color: #9482C9;
 }
 .Moench{
-	color: #558A84;
+  color: #558A84;
 }
 .Druide{
-	color: #FF7D0A;	
+  color: #FF7D0A; 
 }
 
 .rank{
-	color: #ffffff;
-  float: right;
+  color: #ffffff;
+  float: left;
+  width: 15%;
 }
 .points{
-	color: #ffffff;
-  float: right;
+  color: #ffffff;
 }
 
 
@@ -160,16 +211,24 @@ a:focus {
 }
 
 .img-polaroid {
-  padding: 1px;
+  /* padding: 1px; */
   background-color: #fff;
-  border: 1px solid #ccc;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  
+  border: 1px solid #737373;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-     -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  height: 35px;
-  width: 35px;
-  float: right;
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); */
+  height: 25px;
+  width: 25px;
+  float: left;
+  margin-right: 3px;
+}
+
+.img-polaroid2 {
+  height: 25px;
+  width: 28px;
+  float: left;
+  margin-right: 3px;
 }
 
 .row {
@@ -202,7 +261,7 @@ a:focus {
 }
 
 .row-fluid {
-  margin: 30px;
+  margin-top: 30px;
   padding: 15px;
   width: 100%;
   *zoom: 1;
@@ -226,7 +285,8 @@ a:focus {
   display: block;
   float: left;
   width: 100%;
-  min-height: 280px;
+  margin-bottom: 10px;
+  /*min-height: 280px;*/
   padding-left: 5px;
   /*margin-left: 2.127659574468085%;*/
   -webkit-box-sizing: border-box;
@@ -243,7 +303,7 @@ a:focus {
 }
 
 .row-fluid .span3 {
-  width: 33%;
+  width: 100%;
   *width: 23.351063829787233%;
 }
 
@@ -268,22 +328,20 @@ table {
 
 .table {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .table th,
 .table td {
-  padding: 8px;
+  padding: 3px;
   line-height: 20px;
   text-align: left;
   vertical-align: top;
-  width: 11px;
 /*  border-top: 1px solid #dddddd;*/
 }
 
 .table th {
-  font-weight: bold;
-  border-bottom: 1px solid; 
+  /*border-bottom: 1px solid; */
 }
 
 .table thead th {
