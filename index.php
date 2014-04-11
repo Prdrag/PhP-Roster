@@ -5,6 +5,8 @@
     $dbuname = "";   // Datenbank Username
     $dbpass  = "";          // Datenbank User Passwort
     $dbhost  = "";    // Adresse der Datenbank
+
+    $realmname        = '';
     // Verbindung zum MySQL Host aufbauen
     $verbindung = mysql_connect($dbhost,$dbuname,$dbpass);
     if (!$verbindung) {
@@ -60,7 +62,9 @@
         if($id == 'Leatherworking')$val = "<img src='http://media.blizzard.com/wow/icons/18/trade_leatherworking.jpg'></img>"; 
         if($id == 'Inscription')$val = "<img src='http://media.blizzard.com/wow/icons/18/inv_inscription_tradeskill01.jpg'></img>"; 
         if($id == 'Engineering')$val = "<img src='http://media.blizzard.com/wow/icons/18/trade_engineering.jpg'></img>";
-        if($id == 'Herbalism')$val = "<img src='http://media.blizzard.com/wow/icons/18/trade_herbalism.jpg'></img>"; 
+        if($id == 'Herbalism')$val = "<img src='http://media.blizzard.com/wow/icons/18/trade_herbalism.jpg'></img>";
+        if($id == 'Skinning')$val = "<img src='http://media.blizzard.com/wow/icons/18/inv_misc_pelt_wolf_01.jpg'></img>";
+        if($id == 'Mining')$val = "<img src='http://media.blizzard.com/wow/icons/18/inv_pick_02.jpg'></img>"; 
 
         return $val;
     }
@@ -75,6 +79,8 @@
         if($id == 'Inscription')$val = "<img src='http://media.blizzard.com/wow/icons/18/inv_inscription_tradeskill01.jpg'></img>"; 
         if($id == 'Engineering')$val = "<img src='http://media.blizzard.com/wow/icons/18/trade_engineering.jpg'></img>"; 
         if($id == 'Herbalism')$val = "<img src='http://media.blizzard.com/wow/icons/18/trade_herbalism.jpg'></img>"; 
+        if($id == 'Skinning')$val = "<img src='http://media.blizzard.com/wow/icons/18/inv_misc_pelt_wolf_01.jpg'></img>";
+        if($id == 'Mining')$val = "<img src='http://media.blizzard.com/wow/icons/18/inv_pick_02.jpg'></img>"; 
 
         return $val;
     }
@@ -82,7 +88,7 @@
     function id2ilvl($id){
         if($id >= 577)$val = "<span style='color:#00A528'>".$id."</span>"; 
         if($id < 577 and $id > 570)$val = "<span style='color:#dde191'>".$id."</span>"; 
-        if($id < 570)$val = "<span style='color:#cf3a2a'>".$id."</span>"; 
+        if($id <= 570)$val = "<span style='color:#cf3a2a'>".$id."</span>"; 
         return $val;
     }
         
@@ -127,7 +133,7 @@
                                     <div class="img-polaroid"><img src="http://eu.battle.net/static-render/eu/'.$row->tbnail.'"></img></div>
                                     <div class="specimg"><img src="http://media.blizzard.com/wow/icons/36/'.$row->specimg.'.jpg"><img></div>
                                     <div class="level">'.$row->level.'</div>
-                                    <div class="name"><a href ="http://eu.battle.net/wow/de/character/blackmoore/'.convutf8($row->name).'/advanced">'.convutf8($row->name).'</a></div>
+                                    <div class="name"><a href ="http://eu.battle.net/wow/de/character/YOURSERVER/'.convutf8($row->name).'/advanced">'.convutf8($row->name).'</a></div>
                                     <div class="rank">'.id2rank($row->rank).'</div>
                                     <div class="prof3">
                                     <div class="prof">'.id2iprof($row->prof1).'</div>
